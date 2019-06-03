@@ -68,3 +68,49 @@ Output of `wc -l` on my pretrimmed files
 ```
 
 Need to figure out which samples are biological reps.
+
+
+### Elvers default script
+
+```
+#!/bin/bash -l
+#SBATCH -D /pylon5/mc5phkp/pvasquez/projects/shark/
+#SBATCH -J shark_default
+#SBATCH -o /pylon5/mc5phkp/pvasquez/slurm/out/shark_default.txt
+#SBATCH -e /pylon5/mc5phkp/pvasquez/slurm/err/shark_default.txt
+#SBATCH -t 240:00:00
+#SBATCH -p LM
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem=1000GB
+#SBATCH -c 32
+
+conda activate elvers-env
+
+cd /pylon5/mc5phkp/pvasquez/projects/shark
+
+elvers shark.yaml
+```
+
+### Elvers annotate script
+```
+#!/bin/bash -l
+#SBATCH -D /pylon5/mc5phkp/pvasquez/projects/shark/
+#SBATCH -J shark_annotate
+#SBATCH -o /pylon5/mc5phkp/pvasquez/slurm/out/shark_annotate.txt
+#SBATCH -e /pylon5/mc5phkp/pvasquez/slurm/err/shark_annotate.txt
+#SBATCH -t 240:00:00
+#SBATCH -p LM
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=8
+#SBATCH --mem=1000GB
+#SBATCH -c 32
+#SBATCH -C EGRESS
+
+conda activate elvers-env
+
+cd /pylon5/mc5phkp/pvasquez/projects/shark
+
+elvers shark.yaml assemble annotate
+```
+
