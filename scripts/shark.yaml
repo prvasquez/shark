@@ -1,0 +1,73 @@
+# nema: a non-random subset of data from Tulin et al. (2013), that can
+# be used to do assembly and comparative expression analysis.
+
+# this sets the output directory name:
+basename: 'shark'
+
+get_data:
+  # this says to download samples specified as Web URLs:
+  # this describes the samples:
+  samples: "/pylon5/mc5phkp/pvasquez/projects/shark/shark.samples.csv"
+
+out_path: /pylon5/mc5phkp/pvasquez/projects/shark/out
+
+dammit:
+  busco_group:     # specify all busco groups below here
+  - metazoa
+  - eukaryota
+  db_dir: /pylon5/mc5phkp/pvasquez/elvers/databases/   # specify location for databases (or previously installed databases)
+  db_install_only: False   # just install databases, don't run annotation
+  db_extra: ''
+  annot_extra: '--quick --user-databases /pylon5/mc5phkp/pvasquez/elvers/databases/shark/proteins_from_10kbp_scaffolds.fasta'
+
+trimmomatic:
+  adapter_file:
+    pe_path: /pylon5/mc5phkp/pvasquez/projects/shark/TruSeq2-PE.fa
+    se_path: ep_utils/TruSeq3-SE.fa
+  trim_cmd: ILLUMINACLIP:{}:2:40:15 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:15 MINLEN:35
+  extra: ''
+
+khmer:
+  C: 3
+  Z: 18
+  coverage: 20
+  diginorm: true
+  extra: ''
+  ksize: 20
+  memory: 4e9
+
+trinity:
+  add_single_to_paired: false
+  input_kmer_trimmed: true
+  input_trimmomatic_trimmed: false
+  max_memory: 1000G
+  seqtype: fq
+  extra: '--CPU 32'
+
+salmon:
+  input_trimmomatic_trimmed: True
+  index_params:
+    extra: ''
+  quant_params:
+    extra: ''
+    libtype: A
+
+deseq2:
+  gene_trans_map: True
+  contrasts:
+    time0-vs-time12:
+      - time0
+      - time12
+    time0-vs-time48:
+      - time0
+      - time48
+    time12-vs-time48:
+      - time12
+      - time48
+  pca:
+    labels:
+      - condition
+
+workflows:
+  - quantify
+  - diffexp
