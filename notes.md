@@ -114,3 +114,30 @@ cd /pylon5/mc5phkp/pvasquez/projects/shark
 elvers shark.yaml assemble annotate
 ```
 
+# 11/12/19
+
+Hello World.
+
+I have rerun the annotation with the elephant shark peptide file. This gives me the intermediate file output of 
+
+```
+(base) [pvasquez@login018 shark_trinity.fasta.dammit]$ ls
+annotate.doit.db                               shark_trinity.fasta.transdecoder_dir
+dammit.log                                     shark_trinity.fasta.transdecoder.gff3
+run_shark_trinity.fasta.metazoa.busco.results  shark_trinity.fasta.transdecoder.pep
+shark_trinity.fasta                            shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchus_milii-6.1.3.pep.all.fa.crbl.csv
+shark_trinity.fasta.dammit.gff3                shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchus_milii-6.1.3.pep.all.fa.crbl.gff3
+shark_trinity.fasta.dammit.stats.json          shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchus_milii-6.1.3.pep.all.fa.crbl.model.csv
+shark_trinity.fasta.transdecoder.bed           shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchus_milii-6.1.3.pep.all.fa.crbl.model.plot.pdf
+shark_trinity.fasta.transdecoder.cds           tmp
+```
+
+My understanding is that `shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchus_milii-6.1.3.pep.all.fa.crbl.gff3` is the file that has the recriprical best blasts of my transcripts to the peptide file.
+
+`shark_trinity.fasta.dammit.gff3` is the recriptical best blasts of the transcripts to all the data bases offered by dammit.
+
+I have to options, only look at the peptide file alignments or take the best E value from the full database alignment. I believe I am supposed to do option #1.
+
+To do this, I have to use the splicing python code in elvers. Here is a good link https://github.com/dib-lab/elvers/issues/131
+
+I will try this and report the code I used here.
