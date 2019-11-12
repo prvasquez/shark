@@ -138,6 +138,22 @@ My understanding is that `shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchu
 
 I have to options, only look at the peptide file alignments or take the best E value from the full database alignment. I believe I am supposed to do option #1.
 
-To do this, I have to use the splicing python code in elvers. Here is a good link https://github.com/dib-lab/elvers/issues/131
+To do this, I have to use the splicing python code in elvers. Here is a good link https://github.com/dib-lab/elvers/issues/131 and here https://dib-lab.github.io/elvers/dammit/
 
-I will try this and report the code I used here.
+I will try this and report the code I used here. First I must activate the enviornment that has all the python libraries loaded. To do this `source activate dammit`. **Is this the right one????** I believe so, but might be wrong. After, I have to activate the python code enviornment. `pyton`
+
+```
+(base) [pvasquez@login018 shark_trinity.fasta.dammit]$ source activate dammit
+(dammit) [pvasquez@login018 shark_trinity.fasta.dammit]$ python
+Python 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:01:00) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+
+>>> from dammit.fileio.gff3 import GFF3Parser
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'dammit'
+```
+
+So I believe it is the wrong conda enviornment. Time to choose a new one.
