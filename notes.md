@@ -157,3 +157,18 @@ ModuleNotFoundError: No module named 'dammit'
 ```
 
 So I believe it is the wrong conda enviornment. Time to choose a new one.
+
+11/24/19
+
+Activate Conda env
+```
+(base) [pvasquez@login005 pvasquez]$ source activate /pylon5/mc5phkp/pvasquez/miniconda3/envs/elvers-env
+
+python
+>>> import pandas as pd
+>>> from dammit.fileio.gff3 import GFF3Parser
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'dammit'
+```
+Same issue as last time, I emailed Tessa for help.
