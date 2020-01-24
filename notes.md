@@ -172,3 +172,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'dammit'
 ```
 Same issue as last time, I emailed Tessa for help.
+
+1/24/20
+
+Tessa said pandas should be updated. I need to reinstall the dammit enviornment and then install pandas.
