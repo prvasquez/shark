@@ -136,7 +136,7 @@ My understanding is that `shark_trinity.fasta.x.Callorhinchus_milii.Callorhinchu
 
 `shark_trinity.fasta.dammit.gff3` is the recriptical best blasts of the transcripts to all the data bases offered by dammit.
 
-I have to options, only look at the peptide file alignments or take the best E value from the full database alignment. I believe I am supposed to do option #1.
+I have two options, only look at the peptide file alignments or take the best E value from the full database alignment. I believe I am supposed to do option #1.
 
 To do this, I have to use the splicing python code in elvers. Here is a good link https://github.com/dib-lab/elvers/issues/131 and here https://dib-lab.github.io/elvers/dammit/
 
@@ -176,3 +176,24 @@ Same issue as last time, I emailed Tessa for help.
 1/24/20
 
 Tessa said pandas should be updated. I need to reinstall the dammit enviornment and then install pandas.
+
+1/27/20
+
+Met with Tessa, she helped me setup my dammit conda enviornment on my lcoal computer as well as gave insight into next step (splicing my annotation file).
+
+1/28/20
+
+### What I need to do
+* Research for Lisa's scripts on github on how she did her splicing.
+* Start learning how to use jupyter notebook to write and save scripts
+* Make sure all my files are in the correct place
+
+It seems that bridges is having trouble as I am unable to connect by ssh and my globus app cannot connect. Confirmed: It is down for maintenence today.
+
+#### Transrate
+
+In the future I should use transrate on my transcriptome. http://hibberdlab.com/transrate/getting_started.html
+
+#### Lisa's github scripts
+
+This may be a good starting point, although I am having trouble opening the files. https://github.com/WhiteheadLab/osmotic/tree/master/notebooks
