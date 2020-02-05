@@ -197,3 +197,15 @@ In the future I should use transrate on my transcriptome. http://hibberdlab.com/
 #### Lisa's github scripts
 
 This may be a good starting point, although I am having trouble opening the files. https://github.com/WhiteheadLab/osmotic/tree/master/notebooks
+
+
+2/4/20
+
+I downloaded the 3 gff3 files from bridges to my computer. They consisted of
+1. The dammit gff3 file
+2. The transrate gff3 file
+3. The great white blast gff3 file
+
+Based on andrew's suggustion I am going to collapse the reads by the gff3 file. I will follow the same steps lisa took in this thread, https://github.com/dib-lab/elvers/issues/131.
+
+Limiting step right now is the GFF3Parser.read step.
