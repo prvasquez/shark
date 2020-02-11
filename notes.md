@@ -209,3 +209,19 @@ I downloaded the 3 gff3 files from bridges to my computer. They consisted of
 Based on andrew's suggustion I am going to collapse the reads by the gff3 file. I will follow the same steps lisa took in this thread, https://github.com/dib-lab/elvers/issues/131.
 
 Limiting step right now is the GFF3Parser.read step.
+
+2/11/20
+
+The GFF3Parser.read step sucks and always causes my jupyter notebook to crash. I do not know why, I have emailed Tessa to see if she knows. For now, I will try to do the parsing in Rstudio using some notes from BIS180L lab last year. https://jnmaloof.github.io/BIS180L_web/2019/04/23/R-Practice-Blast/
+
+I also talked to Andrew last week and i realized I annotated my files using the wrong protein fasta. The correct one I should be using is `proteins_from_10kbp_scaffolds.fasta`. I am re-reunning the script now. With that running, I will use the incorrect annotation file to start preparing a script so once I get the correct file it should be easy to collapse. 
+
+***JUST KIDDING*** I already have the `shark_trinity.fasta.x.proteins_from_10kbp_scaffolds.fasta.crbl.gff3` file on my local computer.
+
+
+
+
+
+
+
+
