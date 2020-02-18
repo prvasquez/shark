@@ -239,7 +239,7 @@ ScRDnwc_29106_354205	.	contig	1	354205	.	.	.	ID=ScRDnwc_29106_354205;Name=ScRDnw
 ScRDnwc_29106_354205	maker	gene	67388	139107	.	+	.	ID=maker-ScRDnwc_29106_354205-snap-gene-2.6;Name=maker-ScRDnwc_29106_354205-snap-gene-2.6;Dbxref=InterPro:IPR005821,Pfam:PF00520;Ontology_term=GO:0005216,GO:0006811,GO:0016020,GO:0055085
 ScRDnwc_29106_354205	maker	mRNA	67388	139107	.	+	.	ID=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1;Parent=maker-ScRDnwc_29106_354205-snap-gene-2.6;Name=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1;_AED=0.37;_eAED=0.37;_QI=0|0|0|0.4|0|0|5|0|377;Dbxref=InterPro:IPR005821,Pfam:PF00520;Ontology_term=GO:0005216,GO:0006811,GO:0016020,GO:0055085;Alias=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1
 ```
-* `shark_trinity.fasta.x.proteins_from_10kbp_scaffolds.fasta.crbl.gff3` - My transcriptome annotated with the Great white shark proteome. Example
+* `shark_trinity.fasta.x.proteins_from_10kbp_scaffolds.fasta.crbl.gff3` - My transcriptome annotated with the Great white shark proteome. Has 159,728 matches. Example
 ```
 TRINITY_DN133975_c0_g1_i10 len=4352 path=[0:0-585 2:586-586 4:587-988 6:989-1336 9:1337-1337 10:1338-1655 11:1656-1657 12:1658-1658 13:1659-3580 14:3581-3976 16:3977-3977 17:3978-3978 19:3979-4097 20:4098-4351]	shmlast.LAST	conditional_reciprocal_best_LAST	125	245	2.700000e-79	+	.	ID=homology:0;Name=maker-ScRDnwc_11311_1269623-snap-gene-4.2-mRNA-1 protein AED:0.09 eAED:0.09 QI:0|0|0|0.75|0|0|4|0|144;Target=maker-ScRDnwc_11311_1269623-snap-gene-4.2-mRNA-1 protein AED:0.09 eAED:0.09 QI:0|0|0|0.75|0|0|4|0|144 23 144 +;database=proteins_from_10kbp_scaffolds.fasta
 ```
