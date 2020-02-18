@@ -218,7 +218,11 @@ I also talked to Andrew last week and i realized I annotated my files using the 
 
 ***JUST KIDDING*** I already have the `shark_trinity.fasta.x.proteins_from_10kbp_scaffolds.fasta.crbl.gff3` file on my local computer.
 
+2/17/20
 
+The splicing RMD is coming along well. I need to figure out numbers to keep tract of everything.
+
+* `shark_trinity.fasta` - This is my transcriptome that is on bridges currently. It has 1,097,683 sequences. Sequence example
 
 
 
