@@ -247,5 +247,7 @@ ScRDnwc_29106_354205	maker	gene	67388	139107	.	+	.	ID=maker-ScRDnwc_29106_354205
 ScRDnwc_29106_354205	maker	mRNA	67388	139107	.	+	.	ID=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1;Parent=maker-ScRDnwc_29106_354205-snap-gene-2.6;Name=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1;_AED=0.37;_eAED=0.37;_QI=0|0|0|0.4|0|0|5|0|377;Dbxref=InterPro:IPR005821,Pfam:PF00520;Ontology_term=GO:0005216,GO:0006811,GO:0016020,GO:0055085;Alias=maker-ScRDnwc_29106_354205-snap-gene-2.6-mRNA-1
 ```
 
+2/20/20
 
+Went to D-rug to get advice from taylor. She showed me how to use gsub to remove all the excess stuff.
 
