@@ -258,10 +258,13 @@ Tessa suggested I cluster my trinity assembly using CD-hit so that I reduce the 
 I created an environment in bridges for cdhit `conda create -n cdhit -c conda-forge -c bioconda cd-hit`. Then `conda activate cdhit` to get into my enviornment. Here is the url for cdhit user guide https://github.com/weizhongli/cdhit/wiki/3.-User's-Guide. I am using the cd-hit-est function because my transcriptome is a DNA fasta.
 
 ```
-cd-hit-est -i shark_trinity.fasta -o shark_trinity95.fasta -c 0.95 -d 0
+cd-hit-est -i shark_trinity.fasta -o shark_trinity95.fasta -c 0.95 -d 0 -M 2000`
 ```
 
 Using `-c 0.95` means I want 95% similarity sequences to cluster
 Using `-d 0` reduces the length of the description in the final file. I believe this will make the isoform name in trinity go from `TRINITY_DN323882_c0_g1_i1 len=514 path=[0:0-513]` to `TRINITY_DN323882_c0_g1_i1`.
+Using `-M 2000` set my memory limit to 2000MBs.
+
+This is taking a while, I will have to write a script and run it through bash.
 
 
