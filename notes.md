@@ -251,3 +251,17 @@ ScRDnwc_29106_354205	maker	mRNA	67388	139107	.	+	.	ID=maker-ScRDnwc_29106_354205
 
 Went to D-rug to get advice from taylor. She showed me how to use gsub to remove all the excess stuff.
 
+2/24/20
+
+Tessa suggested I cluster my trinity assembly using CD-hit so that I reduce the number of transcripts.
+
+I created an environment in bridges for cdhit `conda create -n cdhit -c conda-forge -c bioconda cd-hit`. Then `conda activate cdhit` to get into my enviornment. Here is the url for cdhit user guide https://github.com/weizhongli/cdhit/wiki/3.-User's-Guide. I am using the cd-hit-est function because my transcriptome is a DNA fasta.
+
+```
+cd-hit-est -i shark_trinity.fasta -o shark_trinity95.fasta -c 0.95 -d 0
+```
+
+Using `-c 0.95` means I want 95% similarity sequences to cluster
+Using `-d 0` reduces the length of the description in the final file. I believe this will make the isoform name in trinity go from `TRINITY_DN323882_c0_g1_i1 len=514 path=[0:0-513]` to `TRINITY_DN323882_c0_g1_i1`.
+
+
