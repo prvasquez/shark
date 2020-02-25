@@ -267,4 +267,8 @@ Using `-M 2000` set my memory limit to 2000MBs.
 
 This is taking a while, I will have to write a script and run it through bash.
 
+2/25/20
 
+Using CD hit I brought my transcriptome down from 1,097,683 transcripts -> 977,616 clusters (transcripts). This is good, now I have to rerun dammit on this.
+
+Wrote a script to run dammit on the `shark95.fasta`. Xsede is under maintentence for tomorrow so my job will not start until tomorrow.
